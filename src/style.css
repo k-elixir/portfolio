@@ -1,0 +1,9 @@
+.root {
+  --first-color: #f0f5f9;
+  --second-color: #c9d6df;
+  --third-color: #52616b;
+  --fourth-color: #1e2022;
+}
+header {
+  background-color: var(--fourth-color);
+}
