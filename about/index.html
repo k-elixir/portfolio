@@ -10,10 +10,14 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&Farsan&family=Merriweather:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Farsan&family=Merriweather:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../src/style.css" />
@@ -28,9 +32,9 @@
     ></script>
     <title>About Kimia Rafi - Junior front-end developer</title>
   </head>
-  <body>
+  <body class="mt-1">
     <nav
-      class="navbar navbar-expand-lg"
+      class="navbar navbar-expand-lg mb-5"
       style="font-family: 'Alkatra', cursive"
       data-bs-theme="dark"
     >
@@ -46,6 +50,7 @@
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="background-color: #52616b"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,18 +61,17 @@
           <div class="navbar-nav">
             <a class="nav-link" style="color: #52616b" href="/">Home</a>
             <a class="nav-link" style="color: #52616b" href="#">Portfolio</a>
-            <a class="nav-link" style="color: #c9d6df" href="about/index.html"
-              >About</a
-            >
+            <a class="nav-link" style="color: #c9d6df" href="#">About</a>
             <a class="nav-link" style="color: #52616b" href="#">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <header class="container">
+    <header class="container about">
       <div class="row">
-        <div class="col-6 m-4">
+        <div class="col-md-6 m-4">
           <div class="fs-2">Hello!</div>
+          <br />
           <p class="fs-4">
             My name is <strong>Kimia Rafi</strong>.
             <br />
@@ -78,8 +82,21 @@
             learning web development. I am interested in having job positon in
             these cases.
           </p>
+          <a
+            href="https://www.shecodes.io/graduates/68475-kimia-rafi"
+            target="_blank"
+            class="text-decoration-none"
+            >Check my skills in my SheCodes profile.
+            <span class="material-symbols-outlined"> arrow_right_alt </span></a
+          >
         </div>
-        <div class="col"></div>
+        <div class="col-md-5">
+          <img
+            src="../img/IMG_20220203_112417_491.webp"
+            alt="Kimia Personal Picture"
+            class="img-fluid"
+          />
+        </div>
       </div>
     </header>
   </body>

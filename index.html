@@ -13,8 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&Farsan&family=Merriweather:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Farsan&family=Merriweather:wght@700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="src/index.js"></script>
@@ -29,10 +33,10 @@
     ></script>
     <title>Kimia Rafi</title>
   </head>
-  <body>
+  <body class="mt-1">
     <nav
-      class="navbar navbar-expand-lg"
-      style="font-family: 'Alkatra', cursive"
+      class="navbar navbar-expand-lg mb-5"
+      style="font-family: 'Alkatra'"
       data-bs-theme="dark"
     >
       <div class="container">
@@ -47,6 +51,7 @@
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="background-color: #52616b"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,10 +71,10 @@
       </div>
     </nav>
     <header>
-      <div class="container pt-5">
+      <div class="container mb-5">
         <div class="row">
-          <div class="col-4">
-            <h1>Kimia Rafi.</h1>
+          <div class="col-md-3 pt-4 left">
+            <h1>Kimia Rafi<span>.</span></h1>
             <hr />
             <a href="https://github.com/k-elixir" target="_blank">
               <i
@@ -78,15 +83,89 @@
               ></i
             ></a>
             <br />
-            <a href="" class="btn contact-button mt-3">Contact Me</a>
+            <a href="" class="btn contact-button mt-3 fs-5">Contact Me</a>
           </div>
-          <div class="col"></div>
-          <div class="col-4">
-            <span>-Introduction</span>
-            <h2 class="h5">Junior front-end develoer based in Iran.</h2>
+          <div class="col-5 d-none d-md-block">
+            <img
+              src="img/1970-01-01 03.30.00 2.jpg_new_new.jpg"
+              alt="Kimia Personal Picture"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 pt-5 right">
+            <div class="Introduction">-Introduction</div>
+            <br />
+            <h1 class="h5">Junior front-end developer based in Iran.</h1>
+            <p>
+              After withdrawing from the physics master's degree at the
+              university, i got acquinted with Shedodes and now I am learning
+              web development.
+            </p>
+            <br />
+            <a href="about/index.html"
+              ><span>My story</span>
+              <span class="material-symbols-outlined">
+                arrow_right_alt
+              </span></a
+            >
           </div>
         </div>
       </div>
     </header>
+    <main class="pt-5">
+      <h1 class="p-3">My skills</h1>
+      <ul>
+        <li class="d-inline-flex m-5">
+          <ul>
+            <li>
+              <img src="img/icons8-html-100.png" alt="HTML logo" width="80px" />
+            </li>
+            <li class="mt-2"><h3>HTML</h3></li>
+          </ul>
+        </li>
+        <li class="d-inline-flex m-5 ps-4">
+          <ul>
+            <li>
+              <img
+                src="img/icons8-javascript-logo-100.png"
+                alt="JS logo"
+                width="80px"
+              />
+            </li>
+            <li class="mt-2"><h3>JS</h3></li>
+          </ul>
+        </li>
+        <li class="d-inline-flex m-5">
+          <ul>
+            <li>
+              <img src="img/icons8-css3-100.png" alt="CSS logo" />
+            </li>
+            <li><h3>CSS</h3></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li class="d-inline-flex m-5 mt-0">
+          <ul>
+            <li>
+              <img src="img/icons8-python-100.png" alt="Python logo" />
+            </li>
+            <li>
+              <h3>Python</h3>
+            </li>
+          </ul>
+        </li>
+        <li class="d-inline-flex m-5 mt-0">
+          <ul>
+            <li>
+              <img src="img/icons8-react-100.png" alt="React logo" />
+            </li>
+            <li>
+              <h3>React</h3>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
