@@ -1,9 +1,42 @@
-.root {
+:root {
   --first-color: #f0f5f9;
   --second-color: #c9d6df;
-  --third-color: #52616b;
+  --third-color: #2c9699;
   --fourth-color: #1e2022;
+  --default-font: "Merriweather", serif;
+  --second-font: "Farsan", cursive;
+  --title-font: cursive;
+}
+body {
+  background-color: var(--fourth-color);
 }
 header {
-  background-color: var(--fourth-color);
+  color: var(--first-color);
+  font-family: var(--default-font);
+}
+span,
+strong {
+  color: var(--third-color);
+}
+hr {
+  border: 2px solid var(--third-color);
+}
+.contact-button {
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+  border-radius: 2px;
+}
+.contact-button:hover {
+  color: var(--fourth-color);
+  background-color: var(--third-color);
+  transition: 0.3s ease-out;
+}
+header h1 {
+  font-size: 64px;
+}
+header h2 {
+  font-family: var(--title-font);
+}
+p {
+  font-family: var(--second-font);
 }
