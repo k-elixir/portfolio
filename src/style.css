@@ -1,9 +1,9 @@
 :root {
-  --first-color: #f0f5f9;
-  --second-color: #c9d6df;
-  --third-color: #2c9699;
-  --fourth-color: #1e2022;
-  --fifth-color: #52616b;
+  --first-color: #d1dcf0;
+  --second-color: #ffffff;
+  --third-color: #786a49;
+  --fourth-color: #22334b;
+  --fifth-color: #8f80cb;
   --default-font: "Merriweather", serif;
   --second-font: "Farsan", cursive;
   --title-font: cursive;
@@ -18,7 +18,8 @@ header {
 }
 span,
 strong,
-.right a {
+.right a,
+.Introduction {
   color: var(--third-color);
 }
 hr {
@@ -38,7 +39,7 @@ hr {
 .left h1 {
   font-size: 64px;
 }
-header h2 {
+header h2, h1 {
   font-family: var(--title-font);
 }
 p {
@@ -50,28 +51,38 @@ p {
   left: 10px;
   color: inherit;
 }
-.Introduction,
 .about a {
   color: var(--fifth-color);
 }
-main {
-  background-color: var(--first-color);
+.first-main {
+  background-color: var(--fifth-color);
   text-align: center;
+  margin: 100px;
+  box-shadow: 0px 11px 10px 10px rgba(28, 6, 68, 0.56);
 }
 header img {
   height: 450px !important;
 }
-main ul {
+.first-main ul {
   list-style: none;
   padding: 0px;
 }
-main h1 {
+.first-main h1 {
   font-size: 50px;
-  font-family: var(--title-font);
   font-weight: bold;
-  color: var(--fourth-color);
-  background-color: var(--third-color);
+  color: var(--first-color);
+  background-color: var(--fourth-color);
+  margin: 0px -100px;
 }
-h3 {
-  color: var(--fourth-color);
+.first-main i {
+  font-size: 100px;
+}
+.second-main h1, .first-main h3 {
+  color: var(--second-color);
+}
+.second-main h3 {
+  color: var(--fifth-color);
+  position: relative;
+  top: 100px;
+  right: 230px;
 }
