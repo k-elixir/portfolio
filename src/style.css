@@ -1,9 +1,9 @@
 :root {
-  --first-color: #d1dcf0;
-  --second-color: #ffffff;
-  --third-color: #b3c78c;
-  --fourth-color: #152337;
-  --fifth-color: #8d88a2;
+  --first-color: #dfdad4;
+  --second-color: #76838f;
+  --third-color: #aaa6a3;
+  --fourth-color: #232a37;
+  --fifth-color: #354252;
   --default-font: "Merriweather", serif;
   --second-font: "Farsan", cursive;
   --title-font: cursive;
@@ -29,8 +29,11 @@ h1 {
   font-size: 50px;
   font-weight: bold;
 }
-header img {
-  height: 450px !important;
+.home img {
+  position: relative;
+  top: -50px;
+  left: -40px;
+  box-shadow: 0px 1px 0px 0px;
 }
 .contact-button {
   color: var(--third-color);
@@ -68,7 +71,7 @@ header img {
   color: inherit;
 }
 .second-main h3 {
-  color: var(--first-color);
+  color: var(--third-color);
   font-family: var(--title-font);
 }
 @media (min-width: 500px) {
@@ -79,7 +82,7 @@ header img {
   }
 }
 @media (max-width: 500px) {
-  .first-main i{
+  .first-main i {
     font-size: 80px;
   }
   .first-main h3 {
@@ -91,7 +94,6 @@ header img {
   .second-main img {
     margin-bottom: 50px;
   }
-
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .left h1 {
@@ -102,6 +104,10 @@ header img {
 /* about page style */
 .about a {
   color: var(--fifth-color);
+}
+.about img {
+  position: relative;
+  top: -100px;
 }
 
 /* project page style */
