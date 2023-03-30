@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        font-size: 17px;
+      }
+      h1 {
+        color: rgb(46, 92, 173);
+        font-family: sans-serif;
+      }
+      button {
+        border: 1px;
+        padding: 20px;
+        width: 135;
+        border-radius: 30px;
+        background-color: rgb(46, 92, 173);
+        font-size: medium;
+        color: white;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: white;
+        color: rgb(46, 92, 173);
+        border: 1px solid rgb(46, 92, 173);
+        padding: 19px;
+      }
+
+      div {
+        padding: 10px;
+        margin: auto;
+      }
+
+      h3 {
+        font-family: sans-serif;
+        font-size: 1.17em;
+      }
+
+      p {
+        font-family: monospace;
+      }
+
+      div:hover {
+        background-color: rgb(255, 253, 237);
+        border-radius: 10px;
+        width: 350px;
+      }
+
+      .changeColor {
+        color: black;
+        font-weight: normal;
+      }
+
+      footer {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      🌤️
+      <br />
+      Currently 21° in Tokyo
+      <br />
+      <p class="changeColor">13° / <strong>23°</strong></p>
+    </h1>
+
+    <div>
+      <h3>🌧️Tomorrow</h3>
+      <p>10° / <strong>22°</strong></p>
+    </div>
+
+    <div>
+      <h3>🌥️Saturday</h3>
+      <p>15° / <strong>17°</strong></p>
+    </div>
+
+    <div>
+      <h3>☀️Sunday</h3>
+      <p>25° / <strong>28°</strong></p>
+    </div>
+
+    <br />
+
+    <button>Change city</button>
+
+    <br /><br />
+
+    <footer>Coded by Kimia Rafi</footer>
+    <script>
+      function change() {
+        let city = prompt("What city do you live in?");
+        let temperature = prompt("What temperature is it?");
+        let h1 = document.querySelector("h1");
+
+        if (temperature < 0) {
+          h1.innerHTML = `☹️ <br/> Currently ${temperature}°C in ${city}`;
+        } else {
+          h1.innerHTML = `😄 <br/> Currently ${temperature}°C in ${city}`;
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", change);
+    </script>
+  </body>
+</html>

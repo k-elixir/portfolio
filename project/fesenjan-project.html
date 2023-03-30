@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fesenjan - My favorite food</title>
+    <style>
+      body {
+        background: linear-gradient(
+          320deg,
+          rgb(70, 0, 17) 5%,
+          blanchedalmond 65%
+        );
+        font-size: x-large;
+        margin: 40px auto;
+        max-width: 900px;
+        display: block;
+      }
+      h2 {
+        color: rgb(70, 0, 17);
+        font-weight: lighter;
+      }
+      hr {
+        border-color: black;
+      }
+      p {
+        line-height: 1.3em;
+      }
+      button {
+        background-color: rgb(70, 0, 17);
+        border: 2px solid black;
+        border-radius: 10px;
+        color: blanchedalmond;
+        cursor: pointer;
+        font-family: serif;
+        font-weight: 200;
+        font-size: larger;
+        padding: 10px;
+        width: 250;
+      }
+      span {
+        color: blanchedalmond;
+        text-decoration: inherit;
+      }
+      img {
+        border: 0.5px dashed rgb(70, 0, 17);
+        border-radius: 25px;
+        padding: 10;
+      }
+      .link {
+        color: rgb(70, 0, 17);
+        font-size: smaller;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .div-container {
+        border: 0.5px solid black;
+        border-radius: 10px;
+        padding: 30px 40px;
+      }
+      a:hover {
+        transition: ease;
+        font-style: italic;
+      }
+      button:hover {
+        background-color: blanchedalmond;
+        border: 2px solid rgb(70, 0, 17);
+        box-shadow: 5px 5px 1px black;
+        color: rgb(70, 0, 17);
+        transition: 0.2s ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-container">
+      <div class="text-center">
+        <h1>Fesenjan</h1>
+        <h2>
+          <em> My favorite Iranian stew </em>
+        </h2>
+      </div>
+      <hr />
+      <p>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/152/original/IMG_8914.jpg?1675708114"
+          alt="Delicious Fesenjan!"
+          width="400px"
+          align="right"
+        />
+        <strong>Fesenjan</strong> is one of the authentic Iranian stews from
+        northern Iran. It is typically served over rice in the Iranian manner.
+        In cooking this stew walnut kernels and pomegranate paste are used
+        together with chicken or red meat and it is served over rice. Due to the
+        various ingredients used in this stew, Fesenjan can have many different
+        forms. Also, because the cooking process of this food was long and
+        difficult in the past and its ingredients were not available to
+        everyone, this food was considered as royal food. Although its
+        aristocracy has been redused today, it is still referred to as an
+        elaborate food.
+      </p>
+      <hr />
+      <a
+        class="link"
+        href="https://blog.termehtravel.com/fesenjan-persian-walnut-stew/"
+        target="_blank"
+      >
+        <smal>Do you want to know how to cook Fesenjan?</smal>
+      </a>
+      <br />
+      <br />
+      <div class="text-center">
+        <button>
+          Click for a little
+          <br />
+          <strong>Secret</strong>
+        </button>
+        <br />
+        <br />
+        <footer>
+          <small>Coded by</small>
+          <a href="https://www.linkedin.com/in/KimiaRafi" target="_blank">
+            <span>Kimia Rafi</span>
+          </a>
+        </footer>
+        <br />
+      </div>
+    </div>
+    <script>
+      function secret() {
+        let name = prompt("Hi!🙋 My name is Kimia. What is your name?");
+        let taste = prompt(
+          "Write me your favorite taste between sour and sweet!"
+        );
+
+        taste = taste.toLowerCase().trim();
+
+        if (taste === "sweet") {
+          alert(
+            "Dear " +
+              name +
+              " did you know that Fesenjan can be both sweet and sour? Now I suggest you to add sugar to the recipe of Fesenjan. Trust me!😉"
+          );
+        } else if (taste === "sour") {
+          alert(
+            "Dear " +
+              name +
+              " did you know that Fesenjan can be both sweet and sour? Now I suggest you to use sour pomegranate paste in the recipe of Fesenjan and do not put sugar in it. Trust me!😉"
+          );
+        } else {
+          alert(
+            "Good choice " + name + ". You must try sour-sweet Fesenjan!😋"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", secret);
+    </script>
+  </body>
+</html>

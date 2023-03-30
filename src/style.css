@@ -1,9 +1,9 @@
 :root {
   --first-color: #ffffff;
-  --second-color: #ccd4ff;
+  --second-color: #c0c5e3;
   --third-color: #822934;
   --fourth-color: #0e111f;
-  --fifth-color: #2c3050;
+  --fifth-color: #1b1e34;
   --default-font: cursive;
   --second-font: "Merriweather", serif;
 }
@@ -18,7 +18,7 @@ strong,
   color: var(--third-color);
   font-family: var(--second-font);
 }
-hr {
+.home hr {
   border: 2px solid var(--third-color);
   width: 50px;
 }
@@ -31,7 +31,7 @@ h1 {
   position: relative;
   top: -50px;
   left: -40px;
-  box-shadow: 0px 1px 0px 0px var(--third-color);
+  box-shadow: 0px 2px 0px var(--third-color);
 }
 .contact-button {
   color: var(--third-color);
@@ -52,7 +52,7 @@ h1 {
   background-color: var(--fifth-color);
   text-align: center;
   margin: 100px;
-  box-shadow: 0px 11px 10px 10px rgba(28, 6, 68, 0.56);
+  box-shadow: 0px 0px 5px 1px var(--third-color);
 }
 .first-main ul {
   list-style: none;
@@ -80,7 +80,10 @@ footer,
 footer a {
   color: var(--first-color);
 }
-
+.second-main .background {
+  position: relative;
+  top: -65px;
+}
 @media (min-width: 500px) {
   .second-main h3 {
     position: relative;
@@ -111,4 +114,8 @@ footer a {
 /* about page style */
 .about a {
   color: var(--third-color);
+}
+.project hr {
+  color: var(--third-color);
+  border: 3px solid var(--third-color);
 }
