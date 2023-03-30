@@ -84,6 +84,33 @@ footer a {
   position: relative;
   top: -65px;
 }
+.about a {
+  color: var(--third-color);
+}
+.project hr {
+  color: var(--third-color);
+  border: 3px solid var(--third-color);
+}
+.btn-contact-page {
+  background: linear-gradient(
+    320deg,
+    var(--fourth-color) 5%,
+    var(--third-color) 65%
+  );
+  color: var(--first-color);
+  width: 200px;
+  border: 0px;
+  font-size: 25px;
+}
+.btn-contact-page:hover {
+  background: linear-gradient(
+    320deg,
+    var(--third-color) 5%,
+    var(--fourth-color) 65%
+  );
+  color: var(--first-color);
+}
+
 @media (min-width: 500px) {
   .second-main h3 {
     position: relative;
@@ -109,13 +136,4 @@ footer a {
   .left h1 {
     font-size: 65px;
   }
-}
-
-/* about page style */
-.about a {
-  color: var(--third-color);
-}
-.project hr {
-  color: var(--third-color);
-  border: 3px solid var(--third-color);
 }
