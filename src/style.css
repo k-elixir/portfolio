@@ -1,10 +1,11 @@
 :root {
   --first-color: #ffffff;
-  --second-color: #c0c5e3;
+  --second-color: #cacee5;
   --third-color: #822934;
   --fourth-color: #0e111f;
-  --fifth-color: #1b1e34;
+  --fifth-color: #17192c;
   --default-font: "Prata", serif;
+  --paragraph-font: "Merienda", cursive;
   --second-font: "Merriweather", serif;
 }
 body {
@@ -12,16 +13,20 @@ body {
   color: var(--second-color);
   font-family: var(--default-font);
 }
+p,
+li {
+  font-family: var(--paragraph-font);
+}
+header i {
+  color: var(--second-color);
+}
 span,
 strong,
 .right a {
   color: var(--third-color);
   font-family: var(--second-font);
 }
-.home hr {
-  border: 2px solid var(--third-color);
-  width: 50px;
-}
+
 h1 {
   color: var(--first-color);
   font-size: 50px;
@@ -32,11 +37,22 @@ h1 {
   left: -40px;
   box-shadow: 0px 2px 0px var(--third-color);
 }
+.home hr {
+  border: 2px solid var(--third-color);
+  width: 50px;
+}
+.home main h1 {
+  font-size: 70px;
+  margin-bottom: 70px;
+  text-decoration: underline var(--third-color);
+}
 .contact-button {
   color: var(--third-color);
   border: 1px solid var(--third-color);
-  border-radius: 2px;
+  border-radius: 5px;
   font-family: var(--second-font);
+  font-size: 25px;
+  padding: 10px 30px;
 }
 .contact-button:hover {
   color: var(--fourth-color);
@@ -44,33 +60,29 @@ h1 {
   transition: 0.3s ease-out;
 }
 .left h1,
-.first-main i {
+.first-main {
   font-size: 100px;
 }
 .first-main {
   background-color: var(--fifth-color);
   text-align: center;
-  margin: 100px;
-  box-shadow: 0px 0px 5px 1px var(--third-color);
+  margin: 100px 200px;
+  box-shadow: 0px 5px 20px 20px #00000056;
 }
 .first-main ul {
   list-style: none;
   padding: 0px;
 }
-.first-main h1 {
-  background-color: var(--fourth-color);
-  margin: 0px -100px;
+.second-main h3,
+footer .open-source-link,
+.active {
+  color: var(--third-color);
 }
 .material-symbols-outlined {
   position: relative;
   top: 9px;
   left: 10px;
   color: inherit;
-}
-.second-main h3,
-footer .open-source-link,
-.active {
-  color: var(--third-color);
 }
 footer,
 .nav-button {
@@ -79,16 +91,30 @@ footer,
 footer a {
   color: var(--first-color);
 }
-.second-main .background {
-  position: relative;
-  top: -65px;
-}
+
 .about a {
   color: var(--third-color);
 }
 .project hr {
   color: var(--third-color);
   border: 3px solid var(--third-color);
+  margin-top: -300px;
+  margin-bottom: 100px;
+}
+.project h2 {
+  font-family: var(--second-font);
+}
+.project img {
+  position: relative;
+  top: -460px;
+  right: -40px;
+  border-radius: 5px;
+}
+.project .img-border {
+  border: 7px solid var(--third-color);
+  border-radius: 5px;
+  width: 400px;
+  height: 400px;
 }
 .btn-contact-page {
   background: linear-gradient(
@@ -109,7 +135,9 @@ footer a {
   );
   color: var(--first-color);
 }
-
+.second-main img {
+  opacity: 25%;
+}
 @media (min-width: 500px) {
   .second-main h3 {
     position: relative;
@@ -119,12 +147,6 @@ footer a {
   form {
     margin-left: 100px;
     margin-right: 100px;
-  }
-}
-@media (min-width: 990px) {
-  form {
-    margin-left: 250px;
-    margin-right: 250px;
   }
 }
 @media (max-width: 500px) {
@@ -141,6 +163,13 @@ footer a {
     margin-bottom: 50px;
   }
 }
+@media (min-width: 990px) {
+  form {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .left h1 {
     font-size: 65px;
