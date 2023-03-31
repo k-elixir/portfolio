@@ -5,7 +5,7 @@
   --fourth-color: #0e111f;
   --fifth-color: #1b1e34;
   --default-font: cursive;
-  --second-font: "Merriweather", serif;
+  --second-font: "Merriweather", serif, cursive;
 }
 body {
   background-color: var(--fourth-color);
@@ -116,6 +116,16 @@ footer a {
     position: relative;
     top: 100px;
     right: 150px;
+  }
+  form {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 990px){
+  form {
+    margin-left: 250px;
+    margin-right: 250px;
   }
 }
 @media (max-width: 500px) {
