@@ -5,7 +5,7 @@
   --fourth-color: #0e111f;
   --fifth-color: #1b1e34;
   --default-font: cursive;
-  --second-font: "Merriweather", serif, cursive;
+  --second-font: "Merriweather", cursive;
 }
 body {
   background-color: var(--fourth-color);
