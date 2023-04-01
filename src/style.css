@@ -31,10 +31,10 @@ h1 {
   color: var(--first-color);
   font-size: 50px;
 }
-.home img {
+.home .center img {
   position: relative;
-  top: -50px;
-  left: -40px;
+  top: -40px;
+  left: -80px;
   box-shadow: 0px 2px 0px var(--third-color);
 }
 .home hr {
@@ -66,15 +66,11 @@ h1 {
 .first-main {
   background-color: var(--fifth-color);
   text-align: center;
-  margin: 100px 200px;
   box-shadow: 0px 5px 20px 20px #00000056;
 }
 .first-main ul {
   list-style: none;
   padding: 0px;
-}
-.second-main img {
-  opacity: 25%;
 }
 .second-main h3,
 footer .open-source-link,
@@ -135,6 +131,7 @@ footer a {
     margin-right: 100px;
   }
 }
+
 @media (max-width: 500px) {
   .first-main i {
     font-size: 80px;
@@ -163,6 +160,7 @@ footer a {
     margin-bottom: 20px;
   }
 }
+
 @media (min-width: 575px) and (max-width: 991px) {
   .project img {
     padding-bottom: 30px;
@@ -171,12 +169,34 @@ footer a {
     text-align: center;
   }
 }
+
+@media (max-width: 700px) {
+  .first-main {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .home .first-main h1 {
+    font-size: 50px;
+    margin-bottom: 0px !important;
+  }
+  .home .second-main h1 {
+    font-size: 50px;
+  }
+  .first-main i {
+    font-size: 70px;
+  }
+}
+
 @media (min-width: 990px) {
   form {
     margin-left: 250px;
     margin-right: 250px;
   }
+  .home .first-main {
+    margin: 100px 200px !important;
+  }
 }
+
 @media (min-width: 1000px) {
   .project img {
     position: relative;
@@ -200,6 +220,7 @@ footer a {
     margin-top: -230px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .left h1 {
     font-size: 65px;
