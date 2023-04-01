@@ -73,6 +73,9 @@ h1 {
   list-style: none;
   padding: 0px;
 }
+.second-main img {
+  opacity: 25%;
+}
 .second-main h3,
 footer .open-source-link,
 .active {
@@ -91,30 +94,15 @@ footer,
 footer a {
   color: var(--first-color);
 }
-
 .about a {
   color: var(--third-color);
 }
 .project hr {
   color: var(--third-color);
   border: 3px solid var(--third-color);
-  margin-top: -300px;
-  margin-bottom: 100px;
 }
 .project h2 {
   font-family: var(--second-font);
-}
-.project img {
-  position: relative;
-  top: -460px;
-  right: -40px;
-  border-radius: 5px;
-}
-.project .img-border {
-  border: 7px solid var(--third-color);
-  border-radius: 5px;
-  width: 400px;
-  height: 400px;
 }
 .btn-contact-page {
   background: linear-gradient(
@@ -135,9 +123,7 @@ footer a {
   );
   color: var(--first-color);
 }
-.second-main img {
-  opacity: 25%;
-}
+
 @media (min-width: 500px) {
   .second-main h3 {
     position: relative;
@@ -162,6 +148,28 @@ footer a {
   .second-main img {
     margin-bottom: 50px;
   }
+  .project h2 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .project{
+    text-align: center;
+  }
+  .project .contact-button {
+    font-size: 20px;
+  }
+  .project h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 575px) and (max-width: 991px) {
+  .project img {
+    padding-bottom: 30px;
+  }
+  .project {
+    text-align: center;
+  }
 }
 @media (min-width: 990px) {
   form {
@@ -169,7 +177,29 @@ footer a {
     margin-right: 250px;
   }
 }
-
+@media (min-width: 1000px) {
+  .project img {
+    position: relative;
+    top: -460px;
+    right: -40px;
+    border-radius: 5px;
+  }
+  .project hr {
+    color: var(--third-color);
+    border: 3px solid var(--third-color);
+    margin-top: -300px;
+    margin-bottom: 100px;
+  }
+  .project .img-border {
+    border: 7px solid var(--third-color);
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+  }
+  .project footer {
+    margin-top: -230px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1200px) {
   .left h1 {
     font-size: 65px;
