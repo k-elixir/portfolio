@@ -124,7 +124,9 @@ footer a {
 .second-main h3 {
   color: var(--first-color);
 }
-
+.project img .second-main img {
+  border-radius: 5px;
+}
 @media (min-width: 500px) {
   form {
     margin-left: 100px;
@@ -183,7 +185,7 @@ footer a {
 
 @media (max-width: 767px) {
   .second-main img {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -239,7 +241,6 @@ footer a {
     position: relative;
     top: -460px;
     right: -40px;
-    border-radius: 5px;
   }
   .project hr {
     color: var(--third-color);
