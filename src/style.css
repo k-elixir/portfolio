@@ -72,9 +72,6 @@ h1 {
   list-style: none;
   padding: 0px;
 }
-.home .second-main img {
-  border-radius: 4px;
-}
 footer .open-source-link,
 .active {
   color: var(--third-color);
@@ -124,9 +121,12 @@ footer a {
 .second-main h3 {
   color: var(--first-color);
 }
-.project img .second-main img {
+
+.project img,
+.second-main img {
   border-radius: 5px;
 }
+
 @media (min-width: 500px) {
   form {
     margin-left: 100px;
@@ -145,18 +145,19 @@ footer a {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
-  .project main {
-    text-align: center;
-  }
   .project .contact-button {
     font-size: 20px;
   }
-  .project main h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+}
+@media (max-width: 552px) {
+  header h1 {
+    font-size: 70px !important;
+  }
+  .home main h1,
+  .project h1 {
+    font-size: 40px !important;
   }
 }
-
 @media (min-width: 575px) and (max-width: 991px) {
   .project img {
     padding-bottom: 30px;
@@ -165,7 +166,6 @@ footer a {
     text-align: center;
   }
 }
-
 @media (max-width: 700px) {
   .first-main {
     margin-left: 0px !important;
@@ -186,12 +186,29 @@ footer a {
 @media (max-width: 767px) {
   .second-main img {
     margin-bottom: 60px;
+    width: 300px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .left h1 {
     font-size: 65px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .home .portfolio-project {
+    margin-top: -113px !important;
+  }
+  .home .first-weather {
+    margin-top: -113px !important;
+  }
+  .second-main img {
+    width: 300px;
+  }
+  .home .center img {
+    left: -20px !important;
   }
 }
 
@@ -203,36 +220,14 @@ footer a {
   .home .first-main {
     margin: 100px 200px !important;
   }
-}
-
-@media (min-width: 992px) {
   .home .portfolio-project {
     margin-top: -130px !important;
   }
   .home .first-weather {
     margin-top: -130px !important;
   }
-  .home img {
+  .second-main img {
     width: 350px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .home .portfolio-project {
-    margin-top: -113px !important;
-  }
-  .home .first-weather {
-    margin-top: -113px !important;
-  }
-  .home img {
-    width: 300px;
-  }
-}
-
-@media (max-width: 767px) {
-  .home img {
-    width: 300px;
-    margin-bottom: 30px;
   }
 }
 
