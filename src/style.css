@@ -181,6 +181,24 @@ footer a {
   }
 }
 
+@media (max-width: 767px) {
+  .second-main img {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home .portfolio-project  {
+    margin-top: -130px !important;
+  }
+  .home .first-weather {
+    margin-top: -130px !important;
+  }
+  .home img {
+    width: 350px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .left h1 {
     font-size: 65px;
