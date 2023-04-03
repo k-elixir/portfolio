@@ -26,7 +26,6 @@ strong,
   color: var(--third-color);
   font-family: var(--second-font);
 }
-
 h1 {
   color: var(--first-color);
   font-size: 50px;
@@ -72,10 +71,6 @@ h1 {
   list-style: none;
   padding: 0px;
 }
-footer .open-source-link,
-.active {
-  color: var(--third-color);
-}
 .material-symbols-outlined {
   position: relative;
   top: 9px;
@@ -86,11 +81,14 @@ footer,
 .nav-button {
   background-color: var(--fifth-color);
 }
-footer a {
-  color: var(--first-color);
-}
+footer .open-source-link,
+.active,
 .about a {
   color: var(--third-color);
+}
+footer a,
+.second-main h3 {
+  color: var(--first-color);
 }
 .project hr {
   color: var(--third-color);
@@ -120,9 +118,6 @@ footer a {
     var(--third-color) 5%,
     var(--fourth-color) 65%
   );
-  color: var(--first-color);
-}
-.second-main h3 {
   color: var(--first-color);
 }
 
@@ -251,7 +246,6 @@ footer a {
     margin-top: -100px;
   }
 }
-
 
 @media (max-width: 700px) {
   .first-main {
