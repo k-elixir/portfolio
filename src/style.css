@@ -93,6 +93,8 @@ footer a,
 .project hr {
   color: var(--third-color);
   border: 3px solid var(--third-color);
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .project h2 {
   font-family: var(--second-font);
@@ -134,13 +136,6 @@ footer a,
   }
   .first-main h3 {
     font-size: 30px;
-  }
-  .project h2 {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
-  .project .contact-button {
-    font-size: 20px;
   }
 }
 
@@ -190,11 +185,7 @@ footer a,
     display: none;
   }
   .project .responsive-text {
-    margin-top: -180px;
-  }
-  .project hr {
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -170px;
   }
   .project footer {
     margin-top: 150px;
@@ -205,8 +196,7 @@ footer a,
   header h1 {
     font-size: 70px !important;
   }
-  .home main h1,
-  .project h1 {
+  .home main h1 {
     font-size: 40px !important;
   }
 }
