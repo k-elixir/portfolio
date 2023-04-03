@@ -99,6 +99,10 @@ footer a {
 .project h2 {
   font-family: var(--second-font);
 }
+.project img,
+.second-main img {
+  border-radius: 5px;
+}
 .btn-contact-page {
   background: linear-gradient(
     320deg,
@@ -120,11 +124,6 @@ footer a {
 }
 .second-main h3 {
   color: var(--first-color);
-}
-
-.project img,
-.second-main img {
-  border-radius: 5px;
 }
 
 @media (min-width: 500px) {
@@ -149,6 +148,64 @@ footer a {
     font-size: 20px;
   }
 }
+
+@media (max-width: 529px) {
+  .project img {
+    width: 200px;
+    position: relative;
+    top: -30px;
+  }
+  .project h1 {
+    font-size: 25px !important;
+  }
+  .project p,
+  .contact-button {
+    font-size: 15px !important;
+  }
+  .project .first-text {
+    display: none;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 679px) {
+  .project img {
+    width: 200px;
+    position: relative;
+    top: -227px;
+    right: -15px;
+  }
+  .project h1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .project p,
+  .contact-button {
+    font-size: 20px !important;
+  }
+  .project .weather-img {
+    right: 15px;
+  }
+  .project .img-border {
+    border: 5px solid var(--third-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+  }
+  .project .first-text {
+    display: none;
+  }
+  .project .responsive-text {
+    margin-top: -180px;
+  }
+  .project hr {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .project footer {
+    margin-top: 150px;
+  }
+}
+
 @media (max-width: 552px) {
   header h1 {
     font-size: 70px !important;
@@ -158,6 +215,43 @@ footer a {
     font-size: 40px !important;
   }
 }
+
+@media (min-width: 680px) and (max-width: 814px) {
+  .project img {
+    width: 250px;
+    position: relative;
+    top: -285px;
+    right: -20px;
+  }
+  .project h1 {
+    font-size: 35px;
+  }
+  .project p,
+  .contact-button {
+    font-size: 20px !important;
+  }
+  .project .weather-img {
+    right: 20px;
+  }
+  .project .img-border {
+    border: 5px solid var(--third-color);
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+  }
+  .project .first-text .contact-button,
+  .project .responsive-text {
+    display: none;
+  }
+  .project hr {
+    margin-bottom: 50px;
+    margin-top: -200px;
+  }
+  .project footer {
+    margin-top: -100px;
+  }
+}
+
 
 @media (max-width: 700px) {
   .first-main {
@@ -205,99 +299,12 @@ footer a {
   }
 }
 
-@media (min-width: 0px) and (max-width: 543px) {
-  .project img {
-    width: 200px;
-    position: relative;
-    top: -30px;
-  }
-  .project h1 {
-    font-size: 30px !important;
-  }
-  .project p,
-  .contact-button {
-    font-size: 15px !important;
-  }
-  .project .first-text {
-    display: none;
-  }
-}
-
-@media (min-width: 544px) and (max-width: 609px) {
-  .project img {
-    width: 200px;
-    position: relative;
-    top: -230px;
-    right: -20px;
-  }
-  .project h1 {
-    font-size: 30px !important;
-  }
-  .project p,
-  .contact-button {
-    font-size: 20px !important;
-  }
-  .project .weather-img {
-    right: 20px;
-  }
-  .project .img-border {
-    border: 7px solid var(--third-color);
-    border-radius: 5px;
-    width: 200px;
-    height: 200px;
-  }
-  .project .first-text {
-    display: none;
-  }
-  .project .responsive-text {
-    margin-top: -170px !important;
-  }
-  .project footer {
-    margin-top: 200px;
-  }
-}
-
-@media (min-width: 610px) and (max-width: 830px) {
-  .project img {
-    width: 250px;
-    position: relative;
-    top: -290px;
-    right: -25px;
-  }
-  .project h1 {
-    font-size: 40px;
-  }
-  .project p,
-  .contact-button {
-    font-size: 20px !important;
-  }
-
-  .project .weather-img {
-    right: 25px;
-  }
-  .project .img-border {
-    border: 7px solid var(--third-color);
-    border-radius: 5px;
-    width: 250px;
-    height: 250px;
-  }
-  .project .first-text {
-    display: none;
-  }
-  .project .responsive-text {
-    margin-top: -200px !important;
-  }
-  .project footer {
-    margin-top: 200px;
-  }
-}
-
-@media (min-width: 831px) and (max-width: 989px) {
+@media (min-width: 815px) and (max-width: 989px) {
   .project img {
     width: 300px;
     position: relative;
-    top: -350px;
-    right: -30px;
+    top: -340px;
+    right: -25px;
   }
   .project h1 {
     font-size: 40px;
@@ -306,10 +313,10 @@ footer a {
     font-size: 20px !important;
   }
   .project .weather-img {
-    right: 30px;
+    right: 25px;
   }
   .project .img-border {
-    border: 7px solid var(--third-color);
+    border: 5px solid var(--third-color);
     border-radius: 5px;
     width: 300px;
     height: 300px;
@@ -327,12 +334,62 @@ footer a {
   .project footer {
     margin-top: -100px;
   }
-  .project .responsive-text {
+  .project .responsive-text,
+  .project .a-none {
     display: none;
   }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 990px) and (max-width: 1199px) {
+  .project img {
+    width: 350px;
+    position: relative;
+    top: -400px;
+    right: -30px;
+  }
+  .project .img-border {
+    border: 7px solid var(--third-color);
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+  }
+  .project h1 {
+    font-size: 45px;
+  }
+  .project p {
+    font-size: 25px !important;
+  }
+  .project .weather-img {
+    right: 30px;
+  }
+  .project hr {
+    color: var(--third-color);
+    border: 3px solid var(--third-color);
+    margin-top: -300px;
+    margin-bottom: 100px;
+  }
+  .project footer {
+    margin-top: -230px;
+  }
+  .project .responsive-text,
+  .project .a-none {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .second-main img {
+    width: 350px;
+  }
+  .home .portfolio-project {
+    margin-top: -130px !important;
+  }
+  .home .first-weather {
+    margin-top: -130px !important;
+  }
+}
+
+@media (min-width: 1200px) {
   form {
     margin-left: 250px;
     margin-right: 250px;
@@ -364,22 +421,8 @@ footer a {
   .project footer {
     margin-top: -230px;
   }
-  .project .responsive-text {
+  .project .responsive-text,
+  .project .a-none {
     display: none;
-  }
-}
-
-@media (min-width: 992px) {
-  .project hr {
-    margin-top: -300px !important;
-  }
-  .second-main img {
-    width: 350px;
-  }
-  .home .portfolio-project {
-    margin-top: -130px !important;
-  }
-  .home .first-weather {
-    margin-top: -130px !important;
   }
 }
